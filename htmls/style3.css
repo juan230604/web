@@ -1,0 +1,80 @@
+h2{text-align: left;}
+body {
+  background-image: url('../imagenes/empresa-instaladora-de-fibra-óptica-Telpro-Madrid.png'); /* Aquí coloca la URL de tu imagen */
+  background-size: cover; /* La imagen cubre toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Hace que la imagen quede fija al hacer scroll */
+  margin: 10;
+  height: 100vh; /* La altura del body es de toda la ventana */
+  
+}
+
+/* Estilos adicionales para el texto */
+.main {
+  text-align: left;
+  color: white; /* Color del texto */
+  font-family: Arial, sans-serif; /* Establece una fuente para el texto */
+  position: relative;
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  padding: 50px;
+  font-size: 2rem; /* Tamaño de fuente */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente para mejorar la legibilidad */
+  border-radius: 10px; /* Bordes redondeados */
+  display: inline-block; /* Hace que el contenedor de texto se ajuste al contenido */
+  line-height: 1; /* Ajuste del interlineado */
+}
+.sidenav {
+    text-align: left;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+ 
+
+
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.mosaic img {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
